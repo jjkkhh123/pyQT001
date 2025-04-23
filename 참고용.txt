@@ -1,0 +1,14 @@
+from PyQt6 import uic
+from PyQt6.QtWidgets import QApplication
+
+Form, Window = uic.loadUiType("dialog.ui")
+
+app = QApplication([])
+window = Window()
+form = Form()
+form.setupUi(window)
+window.show()
+app.exec()
+를 기반으로 main.py를 작성 시작
+출처
+https://build-system.fman.io/qt-designer-download
